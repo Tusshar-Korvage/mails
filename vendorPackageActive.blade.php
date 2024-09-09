@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 @include('emails.header')
-{{-- Subject: Your package is now live! 
-Notification : Congratulations! Your package is live now and [X] credit has been deducted from your account successfully --}}
 <body>
     <div class="header mobile-responsive">
         <img src="{{ asset('uploads/logo.png') }}" alt="Logo">
@@ -13,7 +11,7 @@ Notification : Congratulations! Your package is live now and [X] credit has been
             <b>Dear {{ isset($vendor_name) ? $vendor_name : 'Vendor' }},</b>
         </p>
         <div>
-            <p>We are pleased to inform you that your package, "{{ isset($package_title) ? $package_title : 'Package Name' }}," has been approved by our admin team and is now live on our platform.</p>
+            <p>We are pleased to inform you that your package, "{{ isset($package_name) ? $package_name : 'Package Name' }}," has been approved by our admin team and is now live on our platform.</p>
             <p>Your package is now available for customers to book. We look forward to helping you connect with more customers.</p>
             <p>Thank you for being a valuable part of our community.</p>
         </div>

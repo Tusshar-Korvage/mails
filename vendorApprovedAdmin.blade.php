@@ -13,7 +13,7 @@ Notification : {{vendor_name}} profile has been approved. --}}
             <b>Dear Admin,</b>
         </p>
         <div>
-            <p>We are pleased to inform you that the registration of <b>{!! $data['vendor-name'] !!}</b> has been successfully completed. Their documents have been verified and approved.</p>
+            <p>We are pleased to inform you that the registration of <b> {{ isset($vendor_name) ? $vendor_name : '' }}</b> has been successfully completed. Their documents have been verified and approved.</p>
             <p><b>Vendor Details:</b></p>
             <p><b>Vendor Name:</b> {{ isset($vendor_name) ? $vendor_name : '' }}</p>
             <p><b>Email:</b> {{ isset($vendor_email) ? $vendor_email : '' }}</p>

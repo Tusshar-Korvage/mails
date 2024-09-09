@@ -16,6 +16,7 @@ Notification: {Vendor name} has changed the status of {activity name} to 'Active
             <p><b>Activity Details:</b></p>
             <p><b>Activity Name:</b> {{ $activity_title }}</p>
             <p><b>Vendor:</b> {{ $vendor_name }}</p>
+            {{-- <p><b>Description:</b> {{ $description }}</p> --}}
             <p>Please verify that the activity complies with our guidelines and is available for customers to book. If there are any issues or if further action is required, please advise.</p>
         </div>
         <p>Thank you for your prompt attention to this matter.</p>

@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 @include('emails.header')
-{{-- Subject: Vendor Money Transfer Request Successfully Processed
-Notification for Admin - 
-{ Vendor Name } fund transfer request has been completed successfully. --}}
 <body>
     <div class="header mobile-responsive">
         <img src="{{ asset('uploads/logo.png') }}" alt="Logo">

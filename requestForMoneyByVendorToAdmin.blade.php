@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 @include('emails.header')
-{{-- Subject: Action Required: Vendor Money Transfer Request
-Notification for Admin - [Vendor Name] has requested a money transfer from their wallet balance. Please review and process the request. --}}
 <body>
     <div class="header mobile-responsive">
         <img src="{{ asset('uploads/logo.png') }}" alt="Logo">

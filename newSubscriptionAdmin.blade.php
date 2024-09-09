@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 @include('emails.header')
-{{-- Subject: { Vendor name } has purchased { Subscription name} 
-Notification: { Vendor name } has purchased { Subscription name}  --}}
+
 <body>
     <div class="header mobile-responsive">
         <img src="{{ asset('uploads/logo.png') }}" alt="Logo">

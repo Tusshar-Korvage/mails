@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 @include('emails.header')
-{{-- Subject: Package Submission Rejected
-Notification : Your {Popular Activity Name} package has been deactivated or rejected by the admin. {X} credits have been added back to your account. --}}
 <body>
     <div class="header mobile-responsive">
         <img src="{{ asset('uploads/logo.png') }}" alt="Logo">
@@ -13,7 +11,7 @@ Notification : Your {Popular Activity Name} package has been deactivated or reje
             <b>Dear {{ isset($vendor_name) ? $vendor_name : 'Vendor' }},</b>
         </p>
         <div>
-            <p>We regret to inform you that your package for {{ isset($activity_title) ? $activity_title : 'a popular activity' }} has been rejected after admin verification due to {{ isset($rejection_reason) ? $rejection_reason : 'an unspecified reason' }}.</p>
+            <p>We regret to inform you that your package for {{ isset($activity_name) ? $activity_name : 'a popular activity' }} has been rejected after admin verification due to {{ isset($rejection_reason) ? $rejection_reason : 'an unspecified reason' }}.</p>
             <p>Please review our guidelines and resubmit the package with the necessary adjustments.</p>
             <p>For assistance, contact us at support@joinhabibi.com.</p>
         </div>

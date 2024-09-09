@@ -13,11 +13,11 @@ Notification - Your payment was successful, and the booking amount has been dedu
             <b>Dear {{ isset($customer_name) ? $customer_name : 'Customer' }},</b>
         </p>
         <div>
-            <p>Your recent booking for {{ isset($activity_title) ? $activity_title : 'an activity' }} on {{ isset($date) ? $date : 'a date' }} was successful!</p>
+            <p>Your recent booking {{ isset($booking_id) ? $booking_id : 'Booking id' }} on {{ isset($date) ? $date : 'a date' }} was successful!</p>
             <p>We've deducted {{ isset($amount) ? $amount : 'an amount' }} from your wallet balance.</p>
             <p><b>Updated Wallet Balance:</b> {{ isset($remaining_balance) ? $remaining_balance : 'a remaining balance' }}</p>
             <p>Thank you for choosing us for your adventures. We hope you have a fantastic experience!</p>
-            <p>If you need any help or have any questions, we’re just an email away.</p>
+            <p>If you need any help or have any questions, we're just an email away.</p>
         </div>
         <div>
             <p>Best regards,</p>

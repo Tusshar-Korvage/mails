@@ -11,12 +11,12 @@
             <b>Dear {{ isset($vendor_name) ? $vendor_name : 'Vendor' }},</b>
         </p>
         <div>
-            <p>We are pleased to inform you that your package for {{ isset($activity_name) ? $activity_name : 'a popular activity' }}, has been approved by our admin team and is now live on our platform.</p>
-            <p>Your package is now available for customers to book. We look forward to helping you connect with more customers.</p>
+            <p>We regret to inform you that your activity, {{ isset($activity_name) ? $activity_name : 'Activity Name' }}, has been rejected after admin verification.</p>
+            <p>Please review the details and make necessary adjustments before resubmitting.</p>
+            <p>Thank you for your understanding.</p>
         </div>
         <div>
-            <p>Thank you for being a valuable part of our community.</p>
-            <p>Kind regards,</p>
+            <p>Best regards,</p>
             <p>Team Join Habibi</p>
         </div>
     </div>

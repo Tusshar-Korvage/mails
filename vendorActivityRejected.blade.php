@@ -3,6 +3,7 @@
 @include('emails.header')
 {{-- Subject: Activity Submission Rejected
 Notification: We've identified a problem with your activity listing. Please fix it to keep your activity live. --}}
+
 <body>
     <div class="header mobile-responsive">
         <img src="{{ asset('uploads/logo.png') }}" alt="Logo">
@@ -15,8 +16,8 @@ Notification: We've identified a problem with your activity listing. Please fix 
         <div>
             <p>We regret to inform you that your activity,
                 {{ isset($activity_title) ? $activity_title : 'Activity Name' }}, has been rejected after admin
-                verification. The rejection was due to the following concerns:</p>
-                <p><i>{{ reason_for_rejection }}</i></p>
+                verification.</p>
+            <p>{{ isset($cancellation_reason) ? 'Reason Given : ' . $cancellation_reason : '' }}</p>
             <p>Please review the details and make necessary adjustments before resubmitting.</p>
             <p>Thank you for your understanding.</p>
         </div>

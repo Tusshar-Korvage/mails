@@ -18,7 +18,7 @@ Notification : { vendor name} has created an activity { activity name }. --}}
         </div>
             <p><b>Vendor Name:</b> {{ isset($vendor_name) ? $vendor_name : '' }}</p>
             <p><b>Activity Title</b>: {{ isset($activity_title) ? $activity_title : '' }}</p>
-            <p><b>Category</b>: {{ isset($category) ? $category : '' }}</p>
+            {{-- <p><b>Category</b>: {{ isset($category) ? $category : '' }}</p> --}}
             <p><b>Date</b>: {{ isset($date) ? $date : '' }}</p>
         <div>
             <p>Kindly review the new listing at your earliest convenience to ensure it meets our platform's standards and guidelines.</p><br>

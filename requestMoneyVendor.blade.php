@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 @include('emails.header')
-{{-- Subject: Your Money Transfer Request Has Been Received
-Notification - Your money transfer request has been received. We're processing it now. --}}
 <body>
     <div class="header mobile-responsive">
         <img src="{{ asset('uploads/logo.png') }}" alt="Logo">
@@ -14,9 +12,7 @@ Notification - Your money transfer request has been received. We're processing i
         </p>
         <div>
             <p>We hope this email finds you well.</p>
-            <p>We have received your request to transfer funds of {{ isset($amount) ? $amount : 'an amount' }} from your
-                wallet balance. Our team is currently processing your request, and you will receive a confirmation once
-                the transfer is complete.</p>
+            <p>We have received your request to transfer funds of {{ isset($amount) ? $amount : 'an amount' }} from your wallet balance. Our team is currently processing your request, and you will receive a confirmation once the transfer is complete.</p>
             <p>If you have any questions or need further assistance, please feel free to reach out.</p>
             <p>Thank you for choosing our platform!</p>
         </div>
@@ -27,5 +23,4 @@ Notification - Your money transfer request has been received. We're processing i
     </div>
 </body>
 @include('emails.footer')
-
 </html>

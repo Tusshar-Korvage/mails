@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 @include('emails.header')
-{{-- Subject: Important Notice: Vendor Subscription Expiry
-Notification : { Vendor name } has no active subscription plan.--}}
+
 <body>
     <div class="header mobile-responsive">
         <img src="{{ asset('uploads/logo.png') }}" alt="Logo">
@@ -14,7 +13,7 @@ Notification : { Vendor name } has no active subscription plan.--}}
         </p>
         <div>
             <p>I hope this message finds you well.</p>
-            <p>This is to inform you that the current subscription for one of our vendors has expired. Please find the details below:</p>
+            <p>I am writing to inform you that the current subscription for one of our vendors has expired. Please find the details below:</p>
         </div>
             <p><b>Vendor Name:</b> {{ isset($vendor_name) ? $vendor_name : '' }}</p>
             <p><b>Subscription Plan:</b> {{ isset($subscription_plan) ? $subscription_plan : '' }}</p>

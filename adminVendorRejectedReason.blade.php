@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 @include('emails.header')
-<!-- Subject: {{ $vendor_name }} Rejection Notification
-Notification : {{ $vendor_name }} has been rejected for reasons other than incorrect details or documents. Please review the case.-->
+<!-- Subject: vendor_name Rejection Notification
+Notification : vendor_name has been rejected for reasons other than incorrect details or documents. Please review the case.-->
+
 <body>
     <div class="header mobile-responsive">
         <img src="{{ asset('uploads/logo.png') }}" alt="Logo">
@@ -11,7 +12,8 @@ Notification : {{ $vendor_name }} has been rejected for reasons other than incor
     <div class="container">
         <p class="mb-0" style="text-align: left;"><b>Dear Admin,</b></p>
         <div>
-            <p>This is to notify you that the profile of {{ $vendor_name }} has been rejected from the platform due to some “Other Reasons”.</p>
+            <p>This is to notify you that the profile of {{ isset($vendor_name) ? $vendor_name : "Sir / Ma'am" }} has been rejected from the platform due to
+                {{ isset($reason) ? $reason : 'some “Other Reasons”.' }}</p>
             <p>Please proceed with the appropriate follow-up actions.</p>
         </div>
         <p>Thank you for your attention.</p>
@@ -20,4 +22,5 @@ Notification : {{ $vendor_name }} has been rejected for reasons other than incor
     </div>
 </body>
 @include('emails.footer')
+
 </html>

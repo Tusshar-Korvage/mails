@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 @include('emails.header')
-{{-- Subject: Congratulations! Your Subscription has been activated 
-Notification: Congratulations! Your Subscription has been activated  --}}
+
 <body>
     <div class="header mobile-responsive">
         <img src="{{ asset('uploads/logo.png') }}" alt="Logo">

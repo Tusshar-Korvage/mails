@@ -18,7 +18,7 @@ Subject : Your Booking Has Been Confirmed!  --}}
             <p>Here are the details of your booking:</p>
             <div class="phone-img text-center">
                 <p>Activity/Event: {{ isset($activity_title) ? $activity_title : '' }}</p>
-                <p>Date & Time : {{ isset($booking_date) ? $booking_date : '' }}</p>
+                <p>Date & Time : {{ isset($activity_date) ? $activity_date : '' }}</p>
                 {{-- <p>Location : {{ isset($location) ? $location : '' }}</p> --}}
                 <p>Booking Reference: {{ isset($unique_ticket_id) ? $unique_ticket_id : '' }}</p>
             </div>

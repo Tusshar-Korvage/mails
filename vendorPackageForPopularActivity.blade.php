@@ -27,5 +27,4 @@ Subject: Your Package Creation for {popular activity name} is Successful  --}}
     </div>
 </body>
 @include('emails.footer')
-
 </html>

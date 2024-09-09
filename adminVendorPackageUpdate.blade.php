@@ -12,8 +12,11 @@ Notification: {Vendor name} has updated an existing package. Please review the c
     <div class="container">
         <p class="mb-0" style="text-align: left;"><b>Dear Admin,</b></p>
         <div>
-            <p>This is to notify you that {{ $vendor_name }} has made changes to their {activity_title} package:
-                "{{ $package_title }}". Kindly review the updated package details and take the necessary actions.</p>
+            <p>This is to notify you that {{ isset($vendor_name) ? $vendor_name : '' }} has made changes to their
+                {{ isset($activity_title) ? $activity_title : '' }} package:
+                "{{ isset($package_title) ? $package_title : '' }}". Kindly review the updated package details and take
+                the
+                necessary actions.</p>
             <p>Please reach out if you have any questions or need additional information.</p>
         </div>
         <p>Thank you,</p>

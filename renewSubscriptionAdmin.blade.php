@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 @include('emails.header')
-{{-- Subject: Vendor Subscription Renewal Notification
-Notification : {Vendor name } has sucessfully renewed their subscription.--}}
+
 <body>
     <div class="header mobile-responsive">
         <img src="{{ asset('uploads/logo.png') }}" alt="Logo">

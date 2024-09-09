@@ -17,10 +17,10 @@ Subject : Vendor Confirmation of New Booking  --}}
             <p>Booking Details:</p>
             <div class="phone-img text-center">
                 <p>Customer Name: {{ isset($customer_name) ? $customer_name : '' }}</p>
-                <p>Vendor Name : {{ isset($vendor_name) ? $vendor_name : '' }}</p>
+                <p>Number of Participants: {{ isset($vendor_name) ? $vendor_name : '' }}</p>
                 <p>Activity Booked: {{ isset($activity_title) ? $activity_title : '' }}</p>
-                <p>Booking Date & Slot: {{ isset($booking_date) ? $booking_date : '' }}</p>
-                <p>Activity Date: {{ isset($activity_date) ? $activity_date : '' }}</p>
+                <p>Activity Date & Slot: {{ isset($activity_date) ? $activity_date : '' }}</p>
+                <p>Booking Date: {{ isset($booking_date) ? $booking_date : '' }}</p>
             </div>
         </div>
         <div>

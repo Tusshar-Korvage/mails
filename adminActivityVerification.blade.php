@@ -15,8 +15,8 @@ Notification: {Vendor name} has submitted {activity name} for verification. Plea
             <p>A vendor has submitted a request for verification of their newly created activity. Please review the
                 details below and proceed with the necessary verification process.</p>
             <p><b>Vendor Name:</b> {{ $vendor_name }}</p>
-            <p> <b>Activity Name:</b> {{ $activity_title }}</p>
-            <p> <b>Submission Date:</b> {{ $date }}</p>
+            <p><b>Activity Name:</b> {{ $activity_title }}</p>
+            <p><b>Submission Date:</b> {{ $date }}</p>
             <p>Please review and verify the activity at your earliest convenience. If there are any issues or additional
                 information needed, let us know.</p>
         </div>

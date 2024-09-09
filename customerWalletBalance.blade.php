@@ -13,12 +13,9 @@ Notification - Your wallet has been topped up successfully with [amount]. --}}
             <b>Dear {{ isset($customer_name) ? $customer_name : 'Customer' }},</b>
         </p>
         <div>
-            <p>We're happy to let you know that {{ isset($amount) ? $amount : 'an amount' }} has been successfully added
-                to your wallet on Joinhabibi.</p>
-            <p>You can now use this amount to book your favorite activities, travel experiences, cultural events, and
-                more on our platform.</p>
-            <p>Thank you for choosing Joinhabibi to explore the best experiences. If you have any questions or need
-                help, feel free to reach out to our support team.</p>
+            <p>We're happy to let you know that {{ isset($amount) ? $amount : 'an amount' }} has been successfully added to your wallet on Joinhabibi.</p>
+            <p>You can now use this amount to book your favorite activities, travel experiences, cultural events, and more on our platform.</p>
+            <p>Thank you for choosing Joinhabibi to explore the best experiences. If you have any questions or need help, feel free to reach out to our support team.</p>
         </div>
         <div>
             <p>Happy Exploring!</p>
@@ -28,5 +25,4 @@ Notification - Your wallet has been topped up successfully with [amount]. --}}
     </div>
 </body>
 @include('emails.footer')
-
 </html>

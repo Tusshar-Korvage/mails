@@ -3,6 +3,7 @@
 @include('emails.header')
 {{-- Subject: New Vendor Signup Successful
 Notification: {vendor_name} has signed up sucessfully as a vendor. --}}
+
 <body>
     <div class="header mobile-responsive">
         <img src="{{ asset('uploads/logo.png') }}" alt="Logo">
@@ -16,12 +17,11 @@ Notification: {vendor_name} has signed up sucessfully as a vendor. --}}
             <p>We are excited to inform you that a new vendor has successfully signed up on our platform!</p><br>
 
             <p><b>Vendor Name:</b> {{ isset($vendor_name) ? $vendor_name : '' }}</p>
-            <p><b>Business Name:</b> {{ isset($business_name) ? $business_name : '' }}</p>
             <p><b>Email:</b> {{ isset($vendor_email) ? $vendor_email : '' }}</p>
-            <p><b>Phone no.:</b> {{ isset($vendor_phone) ? $vendor_phone : '' }}</p>
 
             <br>
-            <p>This new vendor will soon start offering their activities, adding to the diverse range of experiences we provide to our users. Please review their profile and ensure everything is set up correctly.</p><br>
+            <p>This new vendor will soon start offering their activities, adding to the diverse range of experiences we
+                provide to our users. Please review their profile and ensure everything is set up correctly.</p><br>
 
             <p>Thank you for your attention and support in helping us grow our vibrant community.</p><br>
         </div>

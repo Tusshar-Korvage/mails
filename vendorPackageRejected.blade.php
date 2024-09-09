@@ -11,12 +11,13 @@
             <b>Dear {{ isset($vendor_name) ? $vendor_name : 'Vendor' }},</b>
         </p>
         <div>
-            <p>We are pleased to inform you that your package for {{ isset($activity_name) ? $activity_name : 'a popular activity' }}, has been approved by our admin team and is now live on our platform.</p>
-            <p>Your package is now available for customers to book. We look forward to helping you connect with more customers.</p>
+            <p>We regret to inform you that your package titled "{{ isset($package_name) ? $package_name : 'Package Name' }}" has been rejected after admin verification due to {{ isset($specific_reason) ? $specific_reason : 'a specific reason' }}.</p>
+            <p>Please review our guidelines and resubmit the package with the necessary adjustments.</p>
+            <p>For assistance, contact us at support@joinhabibi.com or +971 52 853 8071..</p>
+            <p>Thank you for your understanding.</p>
         </div>
         <div>
-            <p>Thank you for being a valuable part of our community.</p>
-            <p>Kind regards,</p>
+            <p>Best regards,</p>
             <p>Team Join Habibi</p>
         </div>
     </div>
